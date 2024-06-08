@@ -6,6 +6,7 @@ export const ProductCardStyled = styled.div`
   height: 285px;
   background-color: ${theme.colors.primary};
 
+
   border: none;
   border-radius: 4px;
   box-shadow: 2px 3px 3px 2px ${theme.colors.footerBackGround};

@@ -17,7 +17,6 @@ function App({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </Providers>
       </ThemeProvider>
-      <ReactQueryDevtools initialIsOpen={false}/>
     </QueryClientProvider>
   )
 }

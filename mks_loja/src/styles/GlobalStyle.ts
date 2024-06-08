@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         flex-direction: column;
         align-content: center;
+        position: relative
     }
 
     ul{
@@ -26,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
 
     button{
         cursor: pointer;
+        border: none;
         font-family: 'Montserrat', sans-serif;
     }
 
