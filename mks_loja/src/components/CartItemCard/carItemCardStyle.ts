@@ -5,6 +5,10 @@ export const CartItemCardStyled = styled.div`
     display: flex;
     min-width: 100%;
     color: ${theme.colors.productCartTextColor};
+    height: 95%;
+    align-items: center;
+
+    position: relative;
 
     justify-content: space-evenly;
     gap:7%;
@@ -31,9 +35,12 @@ export const CartItemCardStyled = styled.div`
     }
 
     div{
+        display:flex;
+        height: 100%;
         width: 35%;
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
+        gap: 2%;
         span{
             font-size: 12px;
         }
@@ -51,5 +58,13 @@ export const CartItemCardStyled = styled.div`
         color: ${theme.colors.second};
         font-size: 17px;
         font-weight: 700;
+    }
+
+    .delete_product_button{
+        position: absolute;
+        z-index: 3;
+        top: 1%;
+        right: 0.1%;
+        cursor: pointer
     }
 `
