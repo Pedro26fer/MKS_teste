@@ -74,6 +74,13 @@ export const CartProvider = ({ children }: any) => {
     }
   };
 
+  const removeAllProducts = (id: number) => {
+    const itemsToRemove = car.find((item: CartItem) => item.product.id === id);
+    if(itemsToRemove){
+      setCar(car.filter( item => item.product.id !== id))
+    }
+  }
+
   const calulateTotalPrice = () => {
     return car.reduce(
       (total: number, item: CartItem) =>
@@ -84,7 +91,7 @@ export const CartProvider = ({ children }: any) => {
 
   return (
     <CarContext.Provider
-      value={{ car, setCar, addProduct, removeProduct, calulateTotalPrice, isVisibleCart, setIsVisibleCart }}
+      value={{ car, setCar, addProduct, removeProduct, calulateTotalPrice, isVisibleCart, setIsVisibleCart, removeAllProducts }}
     >
       {children}
     </CarContext.Provider>

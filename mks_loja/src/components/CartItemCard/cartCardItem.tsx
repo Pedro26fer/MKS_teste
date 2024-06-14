@@ -18,11 +18,17 @@ type PropsCarCard = {
 
 export const CardCartItem = ({photo, name, qtd, price, id} : PropsCarCard) => {
 
-    const {removeProduct, addProduct} = useContext(CarContext)
+    const {removeProduct, addProduct, removeAllProducts} = useContext(CarContext)
 
     const handleDeleteProduct = (id: number) => {
         if(removeProduct){
             removeProduct(id)
+        }
+    }
+
+    const handleDeleteAllProducts = (id: number) => {
+        if(removeAllProducts){
+            removeAllProducts(id)
         }
     }
 
@@ -51,7 +57,7 @@ export const CardCartItem = ({photo, name, qtd, price, id} : PropsCarCard) => {
                 </article>
             </div>
             <p className="preco">R${Math.round(price)}</p>
-            <IoCloseCircle onClick={() => handleDeleteProduct(id)} className="delete_product_button" size={22}/>
+            <IoCloseCircle onClick={() => handleDeleteAllProducts(id)} className="delete_product_button" size={22}/>
         </CartItemCardStyled>
     )
 }

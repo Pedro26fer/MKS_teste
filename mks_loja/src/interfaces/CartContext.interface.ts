@@ -7,6 +7,7 @@ export interface CarContextInterface {
     setCar: Dispatch<SetStateAction<CartItem[]>>
     addProduct: ( idProduct: number) => void
     removeProduct: ( id: number) => void
+    removeAllProducts: (id: number) => void
     calulateTotalPrice: () => number
     isVisibleCart: boolean
     setIsVisibleCart: Dispatch<SetStateAction<boolean>>

@@ -19,10 +19,11 @@ export const CartStyled = styled.aside`
 
   ul{
     display: flex;
-    min-width: 80%;
+    width: 95%;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 7%;
+    padding-left: 5%;
     gap: 2%;
     height: 73%;
     overflow-y: auto;

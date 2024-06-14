@@ -3,7 +3,7 @@ import { theme } from "@/src/styles/theme";
 
 export const CartItemCardStyled = styled.div`
     display: flex;
-    min-width: 100%;
+    width: 98%;
     color: ${theme.colors.productCartTextColor};
     height: 95%;
     align-items: center;
@@ -20,7 +20,6 @@ export const CartItemCardStyled = styled.div`
 
 
     section{
-        width: 100%;
         display:flex;
         align-items: center;
         gap: 8%;
@@ -37,7 +36,7 @@ export const CartItemCardStyled = styled.div`
     div{
         display:flex;
         height: 100%;
-        width: 35%;
+        min-width: 23%;
         flex-direction: column;
         justify-content: center;
         gap: 2%;
@@ -46,10 +45,14 @@ export const CartItemCardStyled = styled.div`
         }
 
         article{
+            display: flex;
             border: 1px  solid ${theme.colors.footerBackGround};
             border-radius: 7px;
+            width: 90%;
             padding: 2px;
             cursor: pointer;
+            justify-content: center;
+            align-items: center;
 
         }
     }
