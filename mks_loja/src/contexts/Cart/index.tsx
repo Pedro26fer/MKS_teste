@@ -48,11 +48,11 @@ export const CartProvider = ({ children }: any) => {
         setCar([...car]);
       } else {
         const newCar = [
+          ...car,
           {
             product: product,
             quantity: 1,
           },
-          ...car,
         ];
         setCar(newCar);
       }

@@ -6,7 +6,7 @@ export const CartStyled = styled.aside`
   top: 0;
   right: 0;
   height: 100vh;
-  width: 28vw;
+  width: 23vw;
 
   display: flex;
   flex-direction: column;

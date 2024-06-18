@@ -4,14 +4,12 @@ import { CarContext } from "@/src/contexts/Cart";
 import { CartItem } from "@/src/interfaces/CartItem.interface";
 import { CardCartItem } from "../CartItemCard/cartCardItem";
 import { CartStyled } from "./cartStyle";
-import { motion, AnimatePresence } from "framer-motion";
+
 
 export const Cart = () => {
   const {
     car,
-    removeProduct,
     calulateTotalPrice,
-    isVisibleCart,
     setIsVisibleCart,
   } = useContext(CarContext);
 
@@ -30,14 +28,6 @@ export const Cart = () => {
   }
 
   return (
-    <AnimatePresence>
-      {isVisibleCart && (
-        <motion.div
-          initial={{ width: 0 }}
-          animate={{ width: 28 }}
-          exit={{ width: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-        >
           <CartStyled>
             <div className="div_cart">
               <h2>Carrinho de compras</h2>
@@ -69,8 +59,6 @@ export const Cart = () => {
             </div>
             <button id="pay">Finalizar Compra</button>
           </CartStyled>
-        </motion.div>
-      )}
-    </AnimatePresence>
+
   );
 };
