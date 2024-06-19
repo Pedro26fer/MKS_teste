@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { theme } from "@/src/styles/theme";
 
 export const ProductCardStyled = styled.div`
-  width: 238px;
-  height: 285px;
+  width: 14vw;
+  height: 39vh;
   background-color: ${theme.colors.primary};
 
 
@@ -15,10 +15,12 @@ export const ProductCardStyled = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
+
   figure {
     display: flex;
     align-self: center;
-    padding-top: 11px;
+    height: 48%;
+    padding-top: 8%;
   }
 
   section {
@@ -29,8 +31,7 @@ export const ProductCardStyled = styled.div`
 
     h3 {
       display: block;
-      width: 134px;
-      left: 14px;
+      width:55%;
       font-size: 18px;
       font-weight: 400;
       line-height: 19px;
@@ -61,7 +62,9 @@ export const ProductCardStyled = styled.div`
     color: ${theme.colors.productCartTextColor};
     display: inline-block;
     width: 202px;
-    padding-left: 9px;
+    padding-left: 4%;
+    padding-bottom: 4%;
+    padding-top: 4%;
   }
 
   button {

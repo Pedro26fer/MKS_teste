@@ -18,7 +18,8 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         flex-direction: column;
         align-content: center;
-        position: relative
+        /* position: relative */
+
     }
 
     ul{

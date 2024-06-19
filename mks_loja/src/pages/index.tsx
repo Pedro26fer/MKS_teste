@@ -4,7 +4,7 @@ import { Cart } from "../components/Cart/cart";
 import HeaderPage from "../components/Header/header";
 import Products from "../components/ProductList/productList";
 import { CarContext } from "../contexts/Cart";
-import { motion, AnimatePresence } from "framer-motion";
+import Footer from "../components/Footer/footer";
 
 export default function Home() {
 
@@ -17,6 +17,7 @@ export default function Home() {
       {isVisibleCart && (
           <Cart/>
       )}
+      <Footer/>
     </>
   );
 }
