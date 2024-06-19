@@ -5,7 +5,7 @@ export const FooterStyled = styled.div`
 
     background-color: ${theme.colors.footerBackGround};
     position: absolute;
-    top: 99%;
+    top: 101%;
 
     display: flex;
     justify-content: center;
